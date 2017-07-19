@@ -57,6 +57,10 @@ namespace RemBot
                 Globals.persistGlobals();
             }, null, startTimeSpan, periodTimeSpan);
 
+            var timer2 = new System.Threading.Timer((e) =>
+            {
+                Globals.decrementRemLove();
+            }, null, startTimeSpan, TimeSpan.FromMinutes(720));
 
             await Task.Delay(-1);
         }

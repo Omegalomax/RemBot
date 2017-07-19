@@ -41,7 +41,7 @@ namespace RemBot
             Console.WriteLine(userName);
 
             int argPos = 0;
-            if (msg.HasCharPrefix('!', ref argPos) || msg.HasMentionPrefix(_client.CurrentUser, ref argPos))
+            if (msg.HasCharPrefix('!', ref argPos) || msg.HasMentionPrefix(_client.CurrentUser, ref argPos) || msg.HasStringPrefix("Rem", ref argPos) || msg.HasStringPrefix("rem", ref argPos))
             {
                 var result = await _service.ExecuteAsync(context, argPos);
 
