@@ -56,7 +56,7 @@ namespace RemBot
         public static List<string> pet3 = new List<string> { };
         public static List<string> pet4 = new List<string> { };
 
-        public static List<string> kiss0 = new List<string> { "*Shoves her heel in your face*", "I think... I'm going to be sick.." };
+        public static List<string> kiss0 = new List<string> { "*Shoves her heel in your face*", "I think... I'm going to be sick..", "http://i.imgur.com/DFz4FsK.gifv"};
         public static List<string> kiss1 = new List<string> { "Huh..? What the..." };
         public static List<string> kiss2 = new List<string> { };
         public static List<string> kiss3 = new List<string> { };
